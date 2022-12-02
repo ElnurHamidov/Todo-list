@@ -8,7 +8,7 @@ class Edit extends React.Component{
 
     render(){
         return(<>
-            <input ref={this.id} type='text'/>
+            <input style={{marginTop: '20px'}} ref={this.id} type='text'/>
             <button onClick={ () => {
                 if(!this.id.current.value) return;
                 this.props.edit(this.props.id, this.id.current.value);
